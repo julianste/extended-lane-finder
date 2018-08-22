@@ -150,7 +150,7 @@ I implemented this step a seperate cell after the implementation of my class in 
 
 #### 1. Provide a link to your final video output.  Your pipeline should perform reasonably well on the entire project video (wobbly lines are ok but no catastrophic failures that would cause the car to drive off the road!).
 
-Here's a [link to my video result](./project_video.mp4)
+Here's a [link to my video result](https://github.com/julianste/extended-lane-finder/blob/master/video_output/project_video_final.mp4)
 
 ---
 
