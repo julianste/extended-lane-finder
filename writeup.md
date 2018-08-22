@@ -158,11 +158,11 @@ Here's a [link to my video result](https://github.com/julianste/extended-lane-fi
 
 #### 1. Briefly discuss any problems / issues you faced in your implementation of this project.  Where will your pipeline likely fail?  What could you do to make it more robust?
 
-While my pipeline does pretty good on the project video, for the two challanges my lane prediction is not very stable. Especially in the hard challenge, all the different light effects and the extreme curvings make it very difficult. In general it is difficult to come up with a "one-fits-all" pipeline. For example, in the hard challenge video we currently mask out too much regions. we would also have to deal with the case when one of the lines is not visible at all.
+While my pipeline does pretty good on the project video, for the two challanges my lane prediction is not very stable. Especially in the hard challenge, all the different light effects and the extreme curvings make it very difficult. In general it is difficult to come up with a "one-fits-all" pipeline. For example, in the hard challenge video we currently mask out too much. We would also have to deal with the case when one of the lines is not visible at all.
 
 Currently, whenever one of the lane lines (left or right) can not be determined, we just use that from the last frame. This assumes that at some point (a few frames later at most) our system is able to recover this line.
 
-Another idea to make it more robust: Discard a polynomial line if it differs (in some sense) too much from the (averaged) previous lines. It is likely that in this case our prediction of the line will be wrong.
+An idea to make it more robust: Discard a polynomial line if it differs (in some sense) too much from the (averaged) previous lines. It is likely that in this case our prediction of the line will be wrong.
 
 
 
